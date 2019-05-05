@@ -1,0 +1,22 @@
+head
+  link(rel='stylesheet', type='text/css', href='stylesheets/style.css')
+form(action='/signup', method='post')
+  .container
+    h1#signup Sign up
+    hr
+    .container
+      #main
+        #fname
+          input(type='text', placeholder='First Name', name='fname', required='')
+        #lname
+          input(type='text', placeholder='Last Name', name='lname', required='')
+      input(type='email', placeholder='E-mail', name='email', required='')
+      input(type='password', placeholder='Password', name='pwd', minlength='8', required='')
+      .centeralign
+        p At least 8 characters
+          input(type='number', placeholder='Phone number', name='pnumber')
+      .centeralign
+        input(type='checkbox', name='susbcribe', style='margin-bottom:15px')
+        |  Susbcribe to our newsletter
+      .clearfix
+        button.signupbtn(type='submit') Sign Up
